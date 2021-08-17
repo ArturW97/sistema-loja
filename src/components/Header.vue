@@ -6,11 +6,11 @@
           <h1 class="logo">
           </h1>
         </div>
-        <div class="col-md-6 header__right">
+        <div class="col-md-6 headerRight">
           <nav class="menu">
             <ul>
               <li>Clientes</li>
-              <li>Produtos</li>
+              <li><router-link to="/">Produtos</router-link></li>
             </ul>
           </nav>
         </div>
@@ -22,11 +22,11 @@
 </script>
 <style>
 .header {
-  background-color: black;
+  background-color: rgb(64, 64, 228);
   height: 70px;
   width: 100%;
 }
-.header__right {
+.headerRight {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -65,6 +65,6 @@
   margin-left: 20px;
 }
 .menu ul li:hover {
-  background-color: #333;
+  background-color: rgb(42, 42, 224);
 }
 </style>

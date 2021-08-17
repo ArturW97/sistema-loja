@@ -7,7 +7,7 @@
       />
       <h2>{{ title }}</h2>
       <p>{{ description }}</p>
-      <button>Pesquisar</button>
+      <button><router-link to="/detalhes">Pesquisar</router-link></button>
     </div>
   </div>
 </template>
@@ -23,7 +23,7 @@ export default {
 </script>
 <style>
 .card {
-  background: #fafafa;
+  background: #edeec6;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 30px;
   margin: 20px 10px;

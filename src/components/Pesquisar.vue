@@ -132,15 +132,10 @@ export default {
   width: 100%;
   height: auto;
 }
-.agenda .row {
+.pesquisar .row {
   align-items: flex-start;
 }
-.agenda .agenda__title {
-  font-size: 36px;
-  padding: 0;
-  margin: 0;
-}
-.agenda input {
+.pesquisar input {
   border-radius: 50px;
   background-color: #f1f1f1;
   border: none;
