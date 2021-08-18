@@ -7,8 +7,8 @@ const routes = [
         path: "/", component: Home,
     },
     {
-        path: "/detalhes", component: DetalhesProdutos
-    }
+        path: "/detalhes", component: DetalhesProdutos, name:"detalhesProdutos"
+    },
 ];
 
 const router = new VueRouter({

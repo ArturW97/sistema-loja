@@ -2,11 +2,13 @@
   <div class="home">
     <Header />
     <Pesquisar />
+    <Footer />
   </div>
 </template>
 <script>
 import Header from "../components/Header.vue";
 import Pesquisar from "../components/Pesquisar.vue";
+import Footer from "../components/Footer.vue";
 
 
 export default {
@@ -15,6 +17,7 @@ export default {
   components: {
     Header,
     Pesquisar,
+    Footer
   },
 };
 </script>

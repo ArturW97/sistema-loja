@@ -11,7 +11,11 @@
       </div>
       <div class="row">
         <div class="col-md-4" v-for="event in eventsFiltered" :key="event.id">
-          <Card :title="event.title" :description="event.description" />
+          <Card
+            :imagemProduto="event.imagemProduto"
+            :title="event.title"
+            :description="event.description"
+          />
         </div>
       </div>
     </div>
@@ -24,34 +28,39 @@ export default {
   components: {
     Card,
   },
-  data: function() {
+  data: function () {
     return {
       search: "",
       events: [
-        {    
+        {
           id: 1,
-          title: "Show de 30 anos",
-          description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                  unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+          title: "As Veias Abertas da América Latina",
+          description: `Remontando a 1970, sua primeira edição, atualizada em 1977, quando 
+          a maioria dos países do continente padecia facinorosas ditaduras, este livro 
+          tornou-se um 'clássico libertário', um inventário da dependência e da vassalagem 
+          de que a América Latina tem sido vítima, desde que nela aportaram os europeus no 
+          final do século XV. No começo, espanhóis e portugueses. Depois vieram ingleses, 
+          holandeses, franceses, modernamente os norte-americanos, e o ancestral cenário 
+          permanece - a mesma submissão, a mesma miséria, a mesma espoliação`,
+          imagemProduto: require("../assets/As-veias-abertas-da-america-latina.jpg"),
         },
         {
           id: 2,
-          title: "Show de 30 anos",
+          title: "Livro2",
           description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
                   unknown printer took a galley of type and scrambled it to make a type specimen book.`,
         },
         {
           id: 3,
-          title: "Show de 30 anos",
+          title: "Livro3",
           description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
                   unknown printer took a galley of type and scrambled it to make a type specimen book.`,
         },
         {
           id: 4,
-          title: "Show de 30 anos",
+          title: "Livro4",
           description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
                   unknown printer took a galley of type and scrambled it to make a type specimen book.`,
@@ -116,7 +125,7 @@ export default {
     };
   },
   computed: {
-    eventsFiltered: function() {
+    eventsFiltered: function () {
       return this.events.filter(
         (event) =>
           event.title.toLowerCase().indexOf(this.search.toLowerCase()) > -1

@@ -2,7 +2,7 @@
   <div>
     <div class="card">
       <img
-        src="../assets/As-veias-abertas-da-america-latina.jpg"
+        :src="imagemProduto"
         class="imgCard"
       />
       <h2>{{ title }}</h2>
@@ -15,9 +15,9 @@
 export default {
   name: "Card",
   props: {
-    id: String,
     title: String,
     description: String,
+    imagemProduto: Image
   },
 };
 </script>
