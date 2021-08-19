@@ -7,7 +7,7 @@
       />
       <h2>{{ title }}</h2>
       <p>{{ description }}</p>
-      <button><router-link to="/detalhes">Pesquisar</router-link></button>
+      <button><router-link to="/detalhes">Fazer Pedido</router-link></button>
     </div>
   </div>
 </template>
@@ -28,6 +28,7 @@ export default {
   padding: 30px;
   margin: 20px 10px;
   display: flex;
+  height: 548px;
   flex-direction: column;
   align-items: center;
 }
@@ -39,6 +40,7 @@ export default {
   font-size: 18px;
   font-weight: bold;
   color: #000000;
+  height: 40px;
 }
 .card p {
   font-size: 14px;
@@ -51,5 +53,6 @@ export default {
   background-color: #c3121c;
   color: #ffffff;
   border: none;
+  margin-top: auto;
 }
 </style>

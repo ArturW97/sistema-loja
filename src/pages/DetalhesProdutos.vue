@@ -13,11 +13,11 @@
         </div>
         <div class="col-md-6">
           <h2>Nome do Produto</h2>
-          <div class="preco">R$ 20,00</div>
+          <div class="preco">R$ {{ precoUnd.toFixed([2]) }}</div>
         </div>
         <div class="col-md-6">
           <h2 class="quantidadeTitulo">Quantidade</h2>
-          <input type="number" class="quantidade" />
+          <input type="number" class="quantidade" v-model="quantidade" />
         </div>
       </div>
       <hr />
@@ -36,7 +36,10 @@
           dummy text ever since the 1500s, when an unknown printer took a galley
           of type and scrambled it to make a type specimen book.`
         </p>
-        <div class="total">Total: 1 x R$20,00 = R$20,00</div>
+        <div class="total">
+          Total: {{ quantidade }} x {{ precoUnd.toFixed([2]) }} =
+          <span v-on="calcularPrecoTotal">R${{ precoTotal }}</span>
+        </div>
       </div>
       <button class="fazerPedido">Fazer Pedido</button>
     </div>
@@ -50,10 +53,26 @@ import Footer from "../components/Footer.vue";
 
 export default {
   name: "DetalhesProdutos",
-
+  data: function() {
+    return {
+      precoUnd: 20.0,
+      quantidade: 0,
+      precoTotal: "",
+    };
+  },
   components: {
     Header,
     Footer,
+  },
+  methods: {
+    calcularPrecoTotal: function() {
+      if (this.quantidade >= 0 && this.quantidade < 1000) {
+        let precoTotal = this.precoUnd * this.quantidade;
+        return precoTotal;
+      } else {
+        return 0;
+      }
+    },
   },
 };
 </script>

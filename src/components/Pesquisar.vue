@@ -28,7 +28,7 @@ export default {
   components: {
     Card,
   },
-  data: function () {
+  data: function() {
     return {
       search: "",
       events: [
@@ -46,86 +46,100 @@ export default {
         },
         {
           id: 2,
-          title: "Livro2",
-          description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                  unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+          title: "17 Contradições e o Fim do Capitalismo",
+          description: `Para a sociedade ocidental moderna, o capital parece tão natural como 
+          o ar que se respira, e quase ninguém pensa em questioná-lo. Mas saber o que faz o 
+          capital funcionar - e o que, por outro lado, pode abalar suas bases - é crucial para 
+          compreender sua saúde em longo prazo, bem como as vastas implicações de qualquer 
+          mudança para a economia global. É o que faz o geógrafo britânico David Harvey nesta 
+          obra incisiva, ao revelar a vanguarda de suas análises das dinâmicas do capital e 
+          destrinchar as contradições internas desse motor econômico..`,
+          imagemProduto: require("../assets/17-contradicoes-e-o-fim-do-capitalismo.jpg"),
         },
         {
           id: 3,
-          title: "Livro3",
-          description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                  unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+          title: "O que é Etnocentrismo",
+          description: `Se comparássemos o Brasil com os Estados Unidos, e o parâmetro de 
+          comparação fosse o futebol, teríamos o Brasil como o mais ´desenvolvido´ e os Estados
+           Unidos como o mais ´atrasado´. Se, por outro lado, o referencial fosse o número de 
+           grupos de rock, a ordem já seria outra. Cada sociedade possui sua própria cultura, 
+           sua própria visão do mundo. A comparação e o confronto entre as diversas identidades
+            é o objetivo de estudo do Etnocentrismo. Com isso, busca compreender melhor o 
+            próprio ser humano e sua relação com o mundo que o cerca.`,
+          imagemProduto: require("../assets/o-que-e-etnocentrismo.jpg"),
         },
         {
           id: 4,
-          title: "Livro4",
-          description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                  unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+          title: "Saber Envelhecer",
+          description: `Límpido texto sobre a velhice, Cícero desenvolve a tese de que a arte de envelhecer 
+          é encontrar o prazer que todas as idades proporcionam, pois todas têm as suas virtudes.Cícero vê 
+          quatro razões para acharem a velhice detestável. 1)Ela nos afasta da vida ativa. 2)Ela
+          enfraqueceria o nosso corpo. 3)Ela nos priva dos melhores prazeres. 4)Ela nos aproxima da morte.
+          Ele analisa cada um desses elementos e vê as justezas e equívocos de cada um.`,
+          imagemProduto: require("../assets/saber-envelhecer.jpg"),
         },
         {
           id: 5,
-          title: "Show de 30 anos",
-          description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                  unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+          title: "Psicologia de Massas Do Fascismo",
+          description: `Este estudo clássico é uma contribuição única à compreensão de um dos fenômenos 
+          cruciais do nosso tempo - o fascismo. Para W. Reich, o fascismo é a expressão da estrutura 
+          irracional do caráter do homem médio, cujas necessidades biológicas e primárias e cujos impulsos
+          são reprimidos há milênios. O autor analisa cuidadosamente a função social dessa opressão e o 
+          papel decisivo que a família autoritária e a igreja desempenham.`,
+          imagemProduto: require("../assets/psicologia-de-massas-do-fascismo.jpg"),
         },
         {
           id: 6,
-          title: "Show de 30 anos",
-          description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                  unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+          title: "Por uma Outra Globalização",
+          description: `O geógrafo Milton Santos defende a ideia de que é preciso uma nova interpretação 
+          do mundo contemporâneo, uma que tenha condições de destacar a 
+          ideologia na produção da história, além de mostrar os limites do seu discurso frente à 
+          realidade vivida pela maioria dos países do mundo. A informação e o dinheiro acabaram por se 
+          tornar vilões, à medida que a maior parte da população não tem acesso a nenhum dos dois. São 
+          os pilares de uma situação em que o progresso técnico é aproveitado por um pequeno número de 
+          atores globais em seu benefício exclusivo.`,
+          imagemProduto: require("../assets/por-uma-outra-globalizacao.jpg"),
         },
         {
           id: 7,
-          title: "Show de 30 anos",
-          description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                  unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+          title: "O Príncipe",
+          description: `O Príncipe é um guia de como chegar ao poder e manter-se nele, buscando não apenas
+          o ideal, mas o real. O livro assume a forma de manual de um bom governante, ensinando as 
+          estratégias políticas necessárias, nem sempre corretas e aprovadas majoritariamente, de como 
+          chegar ao poder e mantê-lo, garantindo a unificação e a estabilidade do Estado. Maquiavel criou 
+          a noção de Estado como forma de organização de uma sociedade. O Príncipe é uma obra atemporal, 
+          que deve, no entanto, ser contextualizada ao momento de cada sociedade e não seguida de forma 
+          arbitrária.`,
+          imagemProduto: require("../assets/o-principe.jpg"),
         },
         {
           id: 8,
-          title: "Show de 30 anos",
-          description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                  unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+          title: "O Ódio Como Política",
+          description: `'Direitas', 'novas direitas', 'onda conservadora', 'fascismo', 'reacionarismo', 
+          'neoconservadorismo' são algumas expressões que tentam conceituar e dar sentido a um fenômeno 
+          que é indiscutível protagonista nos cenários nacional e internacional de hoje, após seguidas 
+          vitórias dessas forças dentro do processo democrático. Trump, Brexit e a popularidade de 
+          Bolsonaro integram as complexas dinâmicas das direitas que a coletânea busca aprofundar a 
+          partir de ensaios escritos por grandes pensadores da atualidade.`,
+          imagemProduto: require("../assets/o-odio-como-politica.jpg"),
         },
         {
           id: 9,
-          title: "Show de 30 anos",
-          description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                  unknown printer took a galley of type and scrambled it to make a type specimen book.`,
-        },
-        {
-          id: 10,
-          title: "Show de 30 anos",
-          description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                  unknown printer took a galley of type and scrambled it to make a type specimen book.`,
-        },
-        {
-          id: 11,
-          title: "Show de 30 anos",
-          description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                  unknown printer took a galley of type and scrambled it to make a type specimen book.`,
-        },
-        {
-          id: 12,
-          title: "Show de 30 anos",
-          description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-                  unknown printer took a galley of type and scrambled it to make a type specimen book.`,
-        },
+          title: "A Elite do Atraso",
+          description: `No âmago da interpretação de Jessé Souza não está a corrupção política. Para 
+          ele, a questão a partir da qual se deve explicar a história passada e atual do Brasil – e 
+          de suas classes, portanto – não é outra senão a escravidão.Sob uma perspectiva inédita, 
+          ele revela fatos cruciais sobre a vida nacional, demonstrando como funcionam as estruturas 
+          ocultas que movem as engrenagens do podere de que maneira a elite do dinheiro exerce sua 
+          força invisível e manipula a sociedade – com o respaldo das narrativas da mídia, do 
+          judiciário e de seu combate seletivo à corrupção.`,
+          imagemProduto: require("../assets/a-elite-do-atraso.jpg")
+        }, 
       ],
     };
   },
   computed: {
-    eventsFiltered: function () {
+    eventsFiltered: function() {
       return this.events.filter(
         (event) =>
           event.title.toLowerCase().indexOf(this.search.toLowerCase()) > -1
