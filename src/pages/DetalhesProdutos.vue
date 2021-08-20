@@ -60,7 +60,7 @@ export default {
   data: function() {
     return {
       precoUnd: 20.0,
-      quantidade: null,
+      quantidade: 0,
       precoTotal: 0,
     };
   },
@@ -69,10 +69,9 @@ export default {
     Footer,
   },
   methods: {
-    toCalculate: function(precoTotal) {
+    toCalculate : function() {
       if (this.quantidade >= 0 && this.quantidade < 999) {
-        this.precoTotal = parseInt(this.precoUnd) * parseInt(this.quantidade);
-        console.log(precoTotal);
+        this.precoTotal = this.precoUnd * this.quantidade;
         return this.precoTotal;
       } else {
         return 0;
