@@ -42,8 +42,7 @@
           of type and scrambled it to make a type specimen book.`
         </p>
         <div class="total">
-          Total: {{ quantidade }} x {{ precoUnd.toFixed([2]) }} =
-          <span :v-text="precoTotal">{{ precoTotal }}</span>
+          Total: {{ quantidade }} x {{ precoUnd.toFixed([2]) }} = R$ {{ precoTotal.toFixed([2]) }}
         </div>
       </div>
       <button class="fazerPedido">Fazer Pedido</button>
@@ -62,7 +61,7 @@ export default {
     return {
       precoUnd: 20.0,
       quantidade: null,
-      precoTotal: null,
+      precoTotal: 0,
     };
   },
   components: {
@@ -72,9 +71,9 @@ export default {
   methods: {
     toCalculate: function(precoTotal) {
       if (this.quantidade >= 0 && this.quantidade < 999) {
-        precoTotal = parseInt(this.precoUnd) * parseInt(this.quantidade);
+        this.precoTotal = parseInt(this.precoUnd) * parseInt(this.quantidade);
         console.log(precoTotal);
-        return precoTotal;
+        return this.precoTotal;
       } else {
         return 0;
       }
