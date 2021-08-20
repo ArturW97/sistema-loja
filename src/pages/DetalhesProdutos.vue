@@ -17,7 +17,12 @@
         </div>
         <div class="col-md-6">
           <h2 class="quantidadeTitulo">Quantidade</h2>
-          <input type="number" class="quantidade" v-model="quantidade" />
+          <input
+            type="number"
+            class="quantidade"
+            v-model="quantidade"
+            @click="toCalculate"
+          />
         </div>
       </div>
       <hr />
@@ -38,7 +43,7 @@
         </p>
         <div class="total">
           Total: {{ quantidade }} x {{ precoUnd.toFixed([2]) }} =
-          <span v-on="calcularPrecoTotal">R${{ precoTotal }}</span>
+          <span :v-text="precoTotal">{{ precoTotal }}</span>
         </div>
       </div>
       <button class="fazerPedido">Fazer Pedido</button>
@@ -56,8 +61,8 @@ export default {
   data: function() {
     return {
       precoUnd: 20.0,
-      quantidade: 0,
-      precoTotal: "",
+      quantidade: null,
+      precoTotal: null,
     };
   },
   components: {
@@ -65,9 +70,10 @@ export default {
     Footer,
   },
   methods: {
-    calcularPrecoTotal: function() {
-      if (this.quantidade >= 0 && this.quantidade < 1000) {
-        let precoTotal = this.precoUnd * this.quantidade;
+    toCalculate: function(precoTotal) {
+      if (this.quantidade >= 0 && this.quantidade < 999) {
+        precoTotal = parseInt(this.precoUnd) * parseInt(this.quantidade);
+        console.log(precoTotal);
         return precoTotal;
       } else {
         return 0;

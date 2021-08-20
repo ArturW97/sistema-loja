@@ -1,10 +1,11 @@
 <template>
-      <header class="header">
+  <header class="header">
     <div class="container">
       <div class="row">
         <div class="col-md-6 ">
-          <h1 class="logo">
-          </h1>
+          <div class="logo">
+            <img src="../assets/Logo.png" />
+          </div>
         </div>
         <div class="col-md-6 headerRight">
           <nav class="menu">
@@ -18,8 +19,7 @@
     </div>
   </header>
 </template>
-<script>
-</script>
+<script></script>
 <style>
 .header {
   background-color: rgb(64, 64, 228);
@@ -34,10 +34,6 @@
 .logo {
   width: 200px;
   padding: 0px;
-  margin-top: 15px;
-}
-.logo__img {
-  width: 100%;
 }
 .menu ul {
   list-style: none;
